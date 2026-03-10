@@ -13,14 +13,14 @@
       theme: {
         extend: {
           colors: {
-            black: '#0a0a0a',
+            black: '#fbff00',
             white: '#ffffff',
             gray: {
-              100: '#6e6e7322',
-              200: '#6e6e7333',
-              400: '#6e6e73',
-              500: '#6e6e73',
-              600: '#0a0a0acc',
+              100: '#0000ff22',
+              200: '#0000ff33',
+              400: '#0000ff',
+              500: '#0000ff',
+              600: '#fbff00cc',
             }
           }
         }
@@ -36,7 +36,7 @@
     .lenis.lenis-smooth { scroll-behavior: auto !important; }
 
     body {
-      font-family: 'Inter', sans-serif; background-color: #ffffff; color: #0a0a0a;
+      font-family: 'Inter', sans-serif; background-color: #ffffff; color: #fbff00;
       -webkit-font-smoothing: antialiased; overflow-x: hidden;
       word-break: break-word; overflow-wrap: break-word;
     }
@@ -46,17 +46,17 @@
     ============================================= */
     #gsap-progress-bar {
       position: fixed; top: 0; left: 0; height: 3px;
-      background: linear-gradient(90deg, #0a0a0a, #6e6e73);
+      background: linear-gradient(90deg, #fbff00, #0000ff);
       z-index: 10000; width: 0; pointer-events: none;
     }
     #gsap-cursor {
       position: fixed; top: 0; left: 0; width: 32px; height: 32px;
-      border-radius: 50%; border: 2px solid #0a0a0a;
+      border-radius: 50%; border: 2px solid #fbff00;
       pointer-events: none; z-index: 9999; opacity: 0; mix-blend-mode: difference;
     }
     #gsap-cursor-follower {
       position: fixed; top: 0; left: 0; width: 8px; height: 8px;
-      border-radius: 50%; background: #0a0a0a;
+      border-radius: 50%; background: #fbff00;
       pointer-events: none; z-index: 9999; opacity: 0; mix-blend-mode: difference;
     }
 
@@ -66,13 +66,13 @@
     .hero-glow {
       position: absolute; top: -150px; left: 50%; transform: translateX(-50%);
       width: 800px; height: 600px;
-      background: radial-gradient(ellipse at center, #6e6e7333 0%, transparent 70%);
+      background: radial-gradient(ellipse at center, #0000ff33 0%, transparent 70%);
       pointer-events: none; will-change: transform;
     }
 
     .glass-nav {
       background: #ffffffD9; backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid #6e6e731A;
+      -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid #0000ff1A;
       transition: box-shadow 0.3s ease;
     }
 
@@ -83,14 +83,14 @@
     .framer-magnetic { will-change: transform; display: inline-block; }
 
     .card-tech {
-      background: #ffffff; border: 1px solid #6e6e7322; border-radius: 24px;
+      background: #ffffff; border: 1px solid #0000ff22; border-radius: 24px;
       transition: box-shadow 0.4s ease, border-color 0.4s ease;
     }
-    .card-tech:hover { box-shadow: 0 12px 40px #6e6e731A; border-color: #6e6e7366; }
+    .card-tech:hover { box-shadow: 0 12px 40px #0000ff1A; border-color: #0000ff66; }
 
     .btn-glow {
       position: relative; display: inline-flex; align-items: center; justify-content: center;
-      background: #0a0a0a; color: #ffffff; border-radius: 99px;
+      background: #fbff00; color: #ffffff; border-radius: 99px;
       padding: 16px 36px; font-weight: 600; font-size: 16px;
       overflow: hidden; transition: transform 0.2s ease;
     }
@@ -106,7 +106,7 @@
     /* FAQ Accordion */
     .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
     .faq-answer.open { max-height: 300px; padding-bottom: 20px; }
-    .faq-icon { transition: transform 0.3s ease; color: #0a0a0a; }
+    .faq-icon { transition: transform 0.3s ease; color: #fbff00; }
     .faq-icon.open { transform: rotate(45deg); }
 
     /* =============================================
@@ -121,15 +121,15 @@
     }
     .tech-portfolio-item {
       width: 300px; height: 380px; flex-shrink: 0;
-      background: #ffffff; border: 1px solid #6e6e7322; border-radius: 20px;
+      background: #ffffff; border: 1px solid #0000ff22; border-radius: 20px;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 600; color: #6e6e73; font-size: 14px;
+      font-weight: 600; color: #0000ff; font-size: 14px;
       transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
       overflow: hidden; cursor: pointer;
     }
     .tech-portfolio-item:hover {
       transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 20px 40px #6e6e731A;
+      box-shadow: 0 20px 40px #0000ff1A;
       z-index: 10;
     }
   </style>
@@ -142,7 +142,7 @@
 
   <nav class="fixed top-0 w-full z-50 glass-nav transition-all duration-300" id="navbar">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div class="font-bold text-xl tracking-tight framer-magnetic cursor-pointer text-[#0a0a0a]">
+      <div class="font-bold text-xl tracking-tight framer-magnetic cursor-pointer text-[#fbff00]">
         csadv
       </div>
       <a href="#contato" class="btn-glow py-2.5 px-6 text-sm framer-magnetic">Falar com especialista</a>
@@ -155,7 +155,7 @@
       <div class="fade-up inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-gray-100 rounded-full text-gray-500 hover:scale-105 transition-transform border border-gray-200">
         cxcx em Passo de Torres - SC
       </div>
-      <h1 class="fade-up text-[clamp(40px,6vw,72px)] font-extrabold tracking-tight mb-8 leading-[1.05] text-[#0a0a0a]">
+      <h1 class="fade-up text-[clamp(40px,6vw,72px)] font-extrabold tracking-tight mb-8 leading-[1.05] text-[#fbff00]">
         csaa
       </h1>
       <p class="fade-up text-[clamp(18px,2vw,22px)] text-gray-500 max-w-3xl mx-auto mb-12 leading-relaxed">
@@ -180,7 +180,7 @@
   <section class="py-24 bg-[#ffffff] px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-16 fade-up">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-[#0a0a0a]">Reconhece estes desafios?</h2>
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-[#fbff00]">Reconhece estes desafios?</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-8">
         
@@ -212,13 +212,13 @@
       <div class="fade-up framer-tilt">
         <div class="w-full aspect-[4/5] bg-gray-100 rounded-3xl overflow-hidden relative shadow-2xl shadow-black/5 border border-gray-200 flex items-center justify-center">
           
-          <img src="assets/sobre_a05aed22882040f9bcffe84bce682281.webp" alt="Sobre Nós" class="absolute inset-0 w-full h-full object-cover">
+          <img src="assets/sobre_421c75dcd0f44d52b04c70c0209a5b05.png" alt="Sobre Nós" class="absolute inset-0 w-full h-full object-cover">
           
         </div>
       </div>
       <div class="fade-up">
         <span class="text-xs font-bold tracking-widest uppercase text-gray-400 mb-4 block">Sobre a empresa</span>
-        <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight text-[#0a0a0a]">Autoridade comprovada.</h2>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight mb-8 leading-tight text-[#fbff00]">Autoridade comprovada.</h2>
         <p class="text-lg text-gray-600 leading-relaxed">
           acsacasca
         </p>
@@ -231,27 +231,27 @@
   <section class="py-28 bg-[#ffffff] px-6">
     <div class="max-w-7xl mx-auto">
       <div class="text-center mb-20 fade-up">
-        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a]">Especialidades</h2>
+        <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-[#fbff00]">Especialidades</h2>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
         
         <div class="card-tech p-10 framer-tilt fade-up group">
           <div class="h-1 w-10 bg-black mb-8 transition-all group-hover:w-16"></div>
-          <h3 class="text-2xl font-bold mb-4 text-[#0a0a0a]">scas</h3>
+          <h3 class="text-2xl font-bold mb-4 text-[#fbff00]">scas</h3>
           <p class="text-gray-500 leading-relaxed">casca</p>
         </div>
         
         
         <div class="card-tech p-10 framer-tilt fade-up group delay-100">
           <div class="h-1 w-10 bg-black mb-8 transition-all group-hover:w-16"></div>
-          <h3 class="text-2xl font-bold mb-4 text-[#0a0a0a]">ascas</h3>
+          <h3 class="text-2xl font-bold mb-4 text-[#fbff00]">ascas</h3>
           <p class="text-gray-500 leading-relaxed">scasc</p>
         </div>
         
         
         <div class="card-tech p-10 framer-tilt fade-up group delay-200">
           <div class="h-1 w-10 bg-black mb-8 transition-all group-hover:w-16"></div>
-          <h3 class="text-2xl font-bold mb-4 text-[#0a0a0a]">acs</h3>
+          <h3 class="text-2xl font-bold mb-4 text-[#fbff00]">acs</h3>
           <p class="text-gray-500 leading-relaxed">vsdvsv</p>
         </div>
         
@@ -263,7 +263,7 @@
   
   <section class="py-28 bg-[#ffffff] px-6 overflow-hidden border-t border-gray-200">
     <div class="max-w-7xl mx-auto text-center mb-16 fade-up">
-      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-[#0a0a0a]">Projetos em Destaque</h2>
+      <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-[#fbff00]">Projetos em Destaque</h2>
       <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Confira um pouco do que já foi feito com excelência.</p>
     </div>
 
@@ -327,8 +327,8 @@
   
 
   
-  <section class="py-24 bg-[#0a0a0a] text-[#ffffff] px-6 overflow-hidden relative">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_#6e6e7333_0%,_transparent_70%)] pointer-events-none"></div>
+  <section class="py-24 bg-[#fbff00] text-[#ffffff] px-6 overflow-hidden relative">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_#0000ff33_0%,_transparent_70%)] pointer-events-none"></div>
     <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-12 text-center relative z-10">
       
       <div class="fade-up framer-tilt">
@@ -354,29 +354,29 @@
   <section class="py-28 bg-[#ffffff] px-6">
     <div class="max-w-5xl mx-auto">
       <div class="text-center mb-20 fade-up">
-        <h2 class="text-4xl font-bold tracking-tight text-[#0a0a0a]">Como funciona o trabalho</h2>
+        <h2 class="text-4xl font-bold tracking-tight text-[#fbff00]">Como funciona o trabalho</h2>
       </div>
       <div class="flex flex-col md:flex-row gap-8 relative">
         <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-0.5 bg-gray-200 z-0"></div>
         
         
         <div class="flex-1 text-center relative z-10 fade-up framer-tilt">
-          <div class="w-24 h-24 mx-auto bg-white border-2 border-gray-200 rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-xl shadow-black/5 text-[#0a0a0a]">1</div>
-          <h3 class="text-xl font-bold mb-2 text-[#0a0a0a]">scacs</h3>
+          <div class="w-24 h-24 mx-auto bg-white border-2 border-gray-200 rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-xl shadow-black/5 text-[#fbff00]">1</div>
+          <h3 class="text-xl font-bold mb-2 text-[#fbff00]">scacs</h3>
         </div>
         
         
         
         <div class="flex-1 text-center relative z-10 fade-up framer-tilt delay-100">
-          <div class="w-24 h-24 mx-auto bg-white border-2 border-[#0a0a0a] rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-xl shadow-black/10 text-[#0a0a0a]">2</div>
-          <h3 class="text-xl font-bold mb-2 text-[#0a0a0a]">acsa</h3>
+          <div class="w-24 h-24 mx-auto bg-white border-2 border-[#fbff00] rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-xl shadow-black/10 text-[#fbff00]">2</div>
+          <h3 class="text-xl font-bold mb-2 text-[#fbff00]">acsa</h3>
         </div>
         
         
         
         <div class="flex-1 text-center relative z-10 fade-up framer-tilt delay-200">
           <div class="w-24 h-24 mx-auto bg-black border-2 border-black rounded-full flex items-center justify-center text-3xl font-bold mb-6 shadow-xl shadow-black/20 text-white">3</div>
-          <h3 class="text-xl font-bold mb-2 text-[#0a0a0a]">cas</h3>
+          <h3 class="text-xl font-bold mb-2 text-[#fbff00]">cas</h3>
         </div>
         
       </div>
@@ -388,13 +388,13 @@
   <section class="py-24 bg-[#ffffff] px-6">
     <div class="max-w-3xl mx-auto">
       <div class="text-center mb-16 fade-up">
-        <h2 class="text-4xl font-bold tracking-tight text-[#0a0a0a]">Dúvidas Frequentes</h2>
+        <h2 class="text-4xl font-bold tracking-tight text-[#fbff00]">Dúvidas Frequentes</h2>
       </div>
       <div class="space-y-4">
         
         <div class="bg-[#ffffff] border border-gray-200 rounded-2xl p-2 fade-up">
-          <button class="w-full flex items-center justify-between p-6 text-left font-bold text-lg cursor-pointer text-[#0a0a0a]" onclick="toggleFaq(this)">
-            cascasc
+          <button class="w-full flex items-center justify-between p-6 text-left font-bold text-lg cursor-pointer text-[#fbff00]" onclick="toggleFaq(this)">
+            tudo sobre ela
             <span class="faq-icon text-2xl font-light">+</span>
           </button>
           <div class="faq-answer px-6 text-gray-600 leading-relaxed">
@@ -412,7 +412,7 @@
 
   <section id="contato" class="py-32 px-6 bg-[#ffffff] text-center relative overflow-hidden">
     <div class="max-w-4xl mx-auto relative z-10">
-      <h2 class="fade-up text-[clamp(40px,5vw,64px)] font-black tracking-tight mb-8 leading-tight text-[#0a0a0a]">
+      <h2 class="fade-up text-[clamp(40px,5vw,64px)] font-black tracking-tight mb-8 leading-tight text-[#fbff00]">
         Vamos iniciar?
       </h2>
       <p class="fade-up text-xl text-gray-500 mb-12">Entre em contato via WhatsApp ou nos acompanhe no Instagram.</p>
@@ -425,7 +425,7 @@
         </div>
         
         <div class="framer-magnetic">
-          <a href="https://instagram.com/epiverso" class="btn-glow bg-transparent border-2 border-[#0a0a0a] text-[#0a0a0a] px-10 py-5 text-lg w-full sm:w-auto hover:bg-[#0a0a0a] hover:text-[#ffffff]">
+          <a href="https://instagram.com/epiverso" class="btn-glow bg-transparent border-2 border-[#fbff00] text-[#fbff00] px-10 py-5 text-lg w-full sm:w-auto hover:bg-[#fbff00] hover:text-[#ffffff]">
             Seguir no Instagram
           </a>
         </div>
